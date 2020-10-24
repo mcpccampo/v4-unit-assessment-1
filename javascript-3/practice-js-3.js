@@ -20,7 +20,7 @@ function setGroceryListTitle(x) {
   return `${x}'s Grocery List`;
 }
 
-//////////////////STEP 4////////////////////
+////////////////// STEP 4////////////////////
 /* 
     Create a function called 'addItem' that takes in one parameter called 'item'. 
     Add the item parameter to the end of the groceries array created above. 
@@ -33,7 +33,7 @@ function addItem(item) {
   displayData();
 }
 
-//////////////////STEP 5////////////////////
+////////////////// STEP 5 ////////////////////
 /*
     Create a function called 'removeItem' that takes in one parameter called 'index'. 
     Inside of the removeItem function, remove the item that corresponds to the index parameter
@@ -46,7 +46,7 @@ function removeItem(index) {
   displayData();
 }
 
-//////////////////STEP 6////////////////////
+/////////////////// STEP 6 /////////////////////
 /*
     Create a function called 'checkGroceryCount'. Inside of checkGroceryCount, 
     you're going to check the total number of groceries in your groceries array using .length. 
@@ -56,6 +56,7 @@ function removeItem(index) {
     If the number of groceries is equal to one, return the string '1 item'. 
     If the amount of groceries is between 1 and 5, return the string 'NUMBEROFGROCERIES items' 
     with NUMBEROFGROCERIES replaced by the number of items in your groceries array.
+
 */
 
 function checkGroceryCount() {
