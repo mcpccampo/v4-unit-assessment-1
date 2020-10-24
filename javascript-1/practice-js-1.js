@@ -116,7 +116,13 @@ let me = {
   Return the answers array inside of the function.
 */
 
-// CODE HERE
+function bigOrSmall(arr) {
+  let answers = [];
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] > 100 ? answers.push('big') : answers.push('small');
+  }
+  return answers;
+}
 
 //////////////////PROBLEM 13////////////////////
 /* 
@@ -129,6 +135,14 @@ let me = {
 */
 
 //CODE HERE
+
+function arrayReverser(arr) {
+  reversed = [];
+  for (let item of arr) {
+    reversed.unshift(item);
+  }
+  return reversed;
+}
 
 //////////////////PROBLEM 14////////////////////
 
@@ -154,16 +168,16 @@ function secondFunction() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ['global', 'inner', 'outer', 'functional'];
+let globalScope = ['global'];
 
 //This array should contain the variable names (as strings) accessible in the firstFunction function.
-let firstFunctionScope = ['global', 'inner', 'outer', 'functional'];
+let firstFunctionScope = ['global', 'outer', 'innerFunction'];
 
 //This array should contain the variable names (as strings) accessible in the innerFunction function.
-let innerFunctionScope = ['global', 'inner', 'outer', 'functional'];
+let innerFunctionScope = ['global', 'inner', 'outer'];
 
 //This array should contain the variable names (as strings) accessible in the secondFunction function.
-let secondFunctionScope = ['global', 'inner', 'outer', 'functional'];
+let secondFunctionScope = ['global', 'functional'];
 
 //////////////////PROBLEM 15////////////////////
 /* 
@@ -171,7 +185,9 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional'];
   Invoke the callback passing the first item in the array as an argument.
 */
 
-//CODE HERE
+function firstItem(array, callback) {
+  callback(array[0]);
+}
 
 //////////////////PROBLEM 16////////////////////
 /* 
@@ -181,7 +197,9 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional'];
   Otherwise, invoke the callback passing in false.
 */
 
-//CODE HERE
+function isItBob(obj, callback) {
+  obj.name === 'Bob' ? callback(true) : callback(false);
+}
 
 //////////////////PROBLEM 17////////////////////
 /*
@@ -189,7 +207,13 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional'];
   Use a for loop to double all numbers in the array and invoke the callback, passing in the doubled array.
 */
 
-//CODE HERE
+function giveMeDoubles(array, callback) {
+  newArray = [];
+  for (let item of array) {
+    newArray.push(item * 2);
+  }
+  callback(newArray);
+}
 
 //////////////////PROBLEM 18////////////////////
 /*
@@ -199,4 +223,12 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional'];
   Otherwise set it to false.
 */
 
-//CODE HERE
+function carFactory(make, model, year) {
+  let car = {
+    make: make,
+    model: model,
+    year: year,
+    isNew: year > 2018 ? true : false,
+  };
+  return car;
+}
