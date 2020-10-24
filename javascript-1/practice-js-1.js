@@ -179,7 +179,7 @@ let innerFunctionScope = ['global', 'inner', 'outer'];
 //This array should contain the variable names (as strings) accessible in the secondFunction function.
 let secondFunctionScope = ['global', 'functional'];
 
-//////////////////PROBLEM 15////////////////////
+////////////////// PROBLEM 15 ////////////////////
 /* 
   Write a function called firstItem that takes in two parameters: an array and a callback.  
   Invoke the callback passing the first item in the array as an argument.
@@ -189,7 +189,7 @@ function firstItem(array, callback) {
   callback(array[0]);
 }
 
-//////////////////PROBLEM 16////////////////////
+////////////////// PROBLEM 16 ////////////////////
 /* 
   Write a function called isItBob that takes in two arguments: an object and a callback function. 
   Check if the object's name property is equal to 'Bob'.  
@@ -201,7 +201,7 @@ function isItBob(obj, callback) {
   obj.name === 'Bob' ? callback(true) : callback(false);
 }
 
-//////////////////PROBLEM 17////////////////////
+////////////////// PROBLEM 17 ////////////////////
 /*
   Write a function called giveMeDoubles that takes in two arguments: an array of numbers and a callback.  
   Use a for loop to double all numbers in the array and invoke the callback, passing in the doubled array.
@@ -215,7 +215,7 @@ function giveMeDoubles(array, callback) {
   callback(newArray);
 }
 
-//////////////////PROBLEM 18////////////////////
+////////////////// PROBLEM 18 ////////////////////
 /*
   Write a function called carFactory that takes in three arguments: a make, model, and year.  
   Create a new object using those keys.  
